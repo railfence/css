@@ -1,0 +1,19 @@
+# Hello, This is a python program
+
+import math  
+
+a = input() 
+b = input() 
+
+1abc = 10 
+778XYZ = 19 
+
+c = a + b  
+print(c) 
+
+
+for i in range(10): 
+    if i % 2 != 0 : 
+        print(i+1) 
+    else : 
+        print(i) 
