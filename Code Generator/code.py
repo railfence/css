@@ -60,3 +60,14 @@ ENTER LINE: B=A-D
 ENTER LINE: C=B+C
 ENTER LINE: D=B
 """
+
+''' Alternate
+i/p:
+ENTER NUMBER OF LINES:1
+ENTER LINE:a=b+c
+
+o/p:
+MOV R1,b
+MOV R2,c
+ADD R1,R2
+'''
