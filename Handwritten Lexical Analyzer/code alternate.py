@@ -1,7 +1,6 @@
 def lex(code):
   keyword=["int","char","float","string","cout","cin"]
   op=["+","-","*","/","(",")","[","]","{","}",">>","<<",",",";","="]
-  num=["0","1","2","3","4","5","6","7","8","9"]
   print("YOUR CODE IS:")
   for command in code:
     print(command)
@@ -17,6 +16,7 @@ def lex(code):
         print("Number:",j)
       else:
         print("Identifier:",j)
+    print("--------------------------------------------------------------------")
 co=int(input("ENTER NUMBER OF LINES:"))
 code=[]
 for u in range(co):
@@ -24,3 +24,23 @@ for u in range(co):
   code.append(c)
 print("--------------------------------------------------------------------")
 lex(code)
+
+'''
+Input:
+ENTER NUMBER OF LINES:1
+ENTER LINE:int a = hello + 3.2 ;
+
+--------------------------------------------------------------------
+output:-
+
+YOUR CODE IS:
+int a = hello + 3.2 ;
+----------------------------------------------------------------
+Keyword: int
+Identifier: a
+Operator: =
+Identifier: hello
+Operator: +
+Identifier: 3.2
+Operator: ;
+'''
